@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 44px;
+        }
+        .wrapper-menu{
+            width: 250px;
+            text-align: center;
+            background:  var(--pink, #F4ECE9);
+            color: var(--brown, #4C4244);
+            border-radius: 10%;
+        }
+        .wrapper-menu__image{
+            width: 250px;
+        }
+         .students{
+           display: flex;
+           justify-content: space-evenly;
+        }
+        @media screen and (max-width: 700px)  {
+            .wrapper{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (max-width: 350px) {
+            .wrapper{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="students">
+        <div class="students-menu">О МИРЕ</div>
+        <div class="students-menu">ЭКОСИСТЕМА</div>
+        <div class="students-menu">РАДЕТЕЛИ</div>
+        <img src="header.svg">
+        <div class="students-menu">КОМАНДА</div>
+        <div class="students-menu">ДОКУМЕНТЫ</div>
+        <div class="students-menu">НОВОСТИ</div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper-menu">
+            <img src="istockphoto-521573881-612x612 1.png" class="wrapper-menu__image">
+            <h3 wrapper-menu__h3>Lorem ipsum dolor</h3>
+            <p class="wrapper-menu__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, amet optio.</p>
+        </div>
+        <div class="wrapper-menu">
+            <img src="istockphoto-521573881-612x612 1.png" class="wrapper-menu__image">
+            <h3 class="wrapper-menu__h3">Lorem, ipsum dolor.</h3>
+            <p class="wrapper-menu__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, placeat provident!</p>
+        </div>
+        <div class="wrapper-menu">
+            <img src="istockphoto-521573881-612x612 1.png" class="wrapper-menu__image">
+            <h3 class="wrapper-menu__h3">Lorem, ipsum dolor.</h3>
+            <p class="wrapper-menu__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, neque sed.</p>
+        </div>
+    </div>    
+</body>
+</html>
